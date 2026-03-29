@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Hanime — Anime Hentai Stream | Download APK</title>
+  <link rel="icon" type="image/png" href="imgs/imgi_26_logo-100.png">
   <!-- Google Fonts: modern, bold, anime-style -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- Font Awesome 6 -->
@@ -14,14 +15,27 @@
 <div class="bg-dark"></div>
 <div class="bg-glow"></div>
 <div class="container">
-  <!-- Navbar Hanime style -->
-  <div class="navbar">
+  <!-- Hero section with background -->
+  <div class="hero-section-wrapper">
+    <!-- Navbar Hanime style -->
+    <div class="navbar">
     <div class="logo">
-      <div class="logo-img"><img class="logo-img" src="imgs/50221275-e0055600-0394-11e9-9dd5-381fafc966fc.png"></div>
+      <div class="logo-img"><img class="logo-img" src="imgs/imgi_26_logo-100.png" alt="Hanime Logo"></div>
       <span class="logo-text">Hanime</span>
     </div>
     <div class="nav-links">
-      <div class="apk-badge" id="navApkBtn">
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ja">日本語</button>
+        <button class="lang-btn" data-lang="zh">中文</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="fr">FR</button>
+        <button class="lang-btn" data-lang="de">DE</button>
+        <button class="lang-btn" data-lang="hi">HI</button>
+        <button class="lang-btn" data-lang="pt">PT</button>
+        <button class="lang-btn" data-lang="ar">AR</button>
+      </div>
+      <div class="apk-badge" id="navApkBtn" data-i18n="download">
         <i class="fab fa-android"></i> APK Download
       </div>
     </div>
@@ -30,77 +44,89 @@
   <!-- Hero Section -->
   <div class="hero">
     <div class="hero-content">
-      <div class="hero-badge">
+      <div class="hero-badge" data-i18n="subtitle">
         <i class="fas fa-crown"></i> #1 Anime Hentai Streaming
       </div>
-      <h1>Uncensored. Unlimited.<br>Ultimate Experience.</h1>
-      <p class="hero-desc">Stream thousands of hentai OVAs, uncensored episodes, and exclusive anime in crisp 1080p/4K. Get the official Hanime  Android APK and enjoy ad-free, offline mode, and early access.</p>
+      <h1 data-i18n="tagline">Uncensored. Unlimited.<br>Ultimate Experience.</h1>
+      <p class="hero-desc" data-i18n="heroDesc">Stream thousands of hentai OVAs, uncensored episodes, and exclusive anime in crisp 1080p/4K. Get the official Hanime  Android APK and enjoy ad-free, offline mode, and early access.</p>
       <div class="download-group">
-        <button class="btn-apk" id="heroApkBtn">
+        <button class="btn-apk" id="heroApkBtn" data-i18n="download">
           <i class="fab fa-android"></i> Download APK Now
         </button>
-        <button class="btn-apk btn-outline-light" id="heroFeaturesBtn">
+        <button class="btn-apk btn-outline-light" id="heroFeaturesBtn" data-i18n="explore">
           <i class="fas fa-info-circle"></i> Features
         </button>
       </div>
       <div class="stats">
-        <div class="stat-item"><i class="fas fa-download"></i> <span>500k+ Downloads</span></div>
-        <div class="stat-item"><i class="fas fa-star"></i> <span>4.8 ★ Rating</span></div>
-        <div class="stat-item"><i class="fas fa-video"></i> <span>3,200+ Titles</span></div>
+        <div class="stat-item"><i class="fas fa-download"></i> <span data-i18n="statUsers">500k+ Downloads</span></div>
+        <div class="stat-item"><i class="fas fa-star"></i> <span data-i18n="statSync">4.8 ★ Rating</span></div>
+        <div class="stat-item"><i class="fas fa-video"></i> <span data-i18n="statVideos">3,200+ Titles</span></div>
       </div>
     </div>
     <div class="hero-graphic">
       <div class="app-mock">
         <i class="fas fa-play-circle"></i>
-        <p style="font-weight:bold;">Hanime <br>Official App</p>
-        <span style="font-size:0.7rem;">v4.2.1 • APK 28MB</span>
+        <p style="font-weight:bold;" data-i18n="appName">Hanime <br>Official App</p>
+        <span style="font-size:0.7rem;" data-i18n="appVersion">v4.2.1 • APK 28MB</span>
       </div>
     </div>
+  </div>
   </div>
 
   <!-- Featured Thumbnails (hentai/anime showcase) -->
   <div class="section-title">
     <i class="fas fa-fire"></i>
-    <span>Hot Picks · Exclusive Leaks</span>
+    <span data-i18n="sectionTitle">Hot Picks · Exclusive Leaks</span>
   </div>
   <div class="thumb-grid" id="thumbGrid"></div>
 
   <!-- APK Download Banner -->
   <div class="apk-banner">
     <div class="banner-content">
-      <h3><i class="fab fa-android"></i> Hanime  APK – Premium Unlocked</h3>
-      <p>Download latest version (v4.2.1) • Uncensored streams • Offline mode • No region lock</p>
+      <h3 data-i18n="bannerTitle"><i class="fab fa-android"></i> Hanime  APK – Premium Unlocked</h3>
+      <p data-i18n="bannerDesc">Download latest version (v4.2.1) • Uncensored streams • Offline mode • No region lock</p>
     </div>
-    <button class="btn-banner" id="bannerApkBtn">
+    <button class="btn-banner" id="bannerApkBtn" data-i18n="bannerBtn">
       <i class="fas fa-download"></i> Download APK (Direct)
     </button>
   </div>
 
   <!-- Mini features -->
   <div class="features-mini">
-    <div class="feat-card"><i class="fas fa-eye"></i><h4>Uncensored HD</h4><p>True 1080p/4K quality, no mosaics</p></div>
-    <div class="feat-card"><i class="fas fa-database"></i><h4>Massive Library</h4><p>3200+ titles + weekly updates</p></div>
-    <div class="feat-card"><i class="fas fa-download"></i><h4>Offline Mode</h4><p>Download episodes & watch anytime</p></div>
-    <div class="feat-card"><i class="fas fa-tachometer-alt"></i><h4>Lightning Fast</h4><p>Optimized streaming engine</p></div>
+    <div class="feat-card"><i class="fas fa-eye"></i><h4 data-i18n="feat1Title">Uncensored HD</h4><p data-i18n="feat1Desc">True 1080p/4K quality, no mosaics</p></div>
+    <div class="feat-card"><i class="fas fa-database"></i><h4 data-i18n="feat2Title">Massive Library</h4><p data-i18n="feat2Desc">3200+ titles + weekly updates</p></div>
+    <div class="feat-card"><i class="fas fa-download"></i><h4 data-i18n="feat3Title">Offline Mode</h4><p data-i18n="feat3Desc">Download episodes & watch anytime</p></div>
+    <div class="feat-card"><i class="fas fa-tachometer-alt"></i><h4 data-i18n="feat4Title">Lightning Fast</h4><p data-i18n="feat4Desc">Optimized streaming engine</p></div>
   </div>
 
   <footer>
-    <p>© 2025 Hanime  — The ultimate hentai streaming platform. All trademarks belong to their respective owners.</p>
-    <p style="margin-top: 8px;"><i class="fas fa-shield-alt"></i> Safe & secure APK • No ads inside app • 18+ only</p>
+    <p data-i18n="footerNote">© 2025 Hanime  — The ultimate hentai streaming platform. All trademarks belong to their respective owners.</p>
+    <p style="margin-top: 8px;" data-i18n="ctaNote2"><i class="fas fa-shield-alt"></i> Safe & secure APK • No ads inside app • 18+ only</p>
   </footer>
 </div>
 
 <div id="toastMsg" class="toast-notify">⬇️ Downloading Hanime  APK — Get the full experience!</div>
 
+<!-- Language support -->
+<script src="languages.js"></script>
+<!-- Main functionality -->
+<script src="script.js"></script>
+
 <script>
   // Thumbnail data for hentai/anime previews (Hanime  style)
   const videoThumbs = [
-    { title: "Temptation Academy", episode: "EP 3 · Uncensored", thumb: "https://picsum.photos/id/104/400/225", tag: "4K" },
-    { title: "Forbidden Ritual", episode: "OVA 2 · New", thumb: "https://picsum.photos/id/96/400/225", tag: "Hot" },
-    { title: "Midnight Seductress", episode: "Special · Uncensored", thumb: "https://picsum.photos/id/169/400/225", tag: "Exclusive" },
-    { title: "Harem Chronicles", episode: "S2 · E4", thumb: "https://picsum.photos/id/42/400/225", tag: "Trending" },
-    { title: "Sinful Bonds", episode: "Director's Cut", thumb: "https://picsum.photos/id/20/400/225", tag: "1080p" },
-    { title: "Lust × Desire", episode: "New Episode", thumb: "https://picsum.photos/id/106/400/225", tag: "4K HDR" }
+    { title: "Kenki Virgo", episode: "EP 1 · Uncensored", thumb: "imgs/imgi_2_kenki-virgo-1-cv1.webp", tag: "1080p" },
+    { title: "Natsu to Hako", episode: "EP 2 · New", thumb: "imgs/imgi_3_natsu-to-hako-2-cv1.webp", tag: "Hot" },
+    { title: "Honey Blonde", episode: "EP 3 · Uncensored", thumb: "imgs/imgi_4_honey-blonde-2-episode-3-cv1.webp", tag: "4K" },
+    { title: "My Mother", episode: "EP 1 · Uncensored", thumb: "imgs/imgi_5_my-mother-1-cv1.webp", tag: "Exclusive" },
+    { title: "Seikou Senki Pony Celes", episode: "EP 1 · New", thumb: "imgs/imgi_6_seikou-senki-pony-celes-1-cv1.webp", tag: "Trending" },
+    { title: "Seikon no Aria", episode: "EP 2 · Uncensored", thumb: "imgs/imgi_7_seikon-no-aria-2-cv1.webp", tag: "1080p" },
+    { title: "Seifuku wa Kita Mama de", episode: "EP 1 · Hot", thumb: "imgs/imgi_8_seifuku-wa-kita-mama-de-1-cv1.webp", tag: "HD" },
+    { title: "Nagachichi Nagai San", episode: "EP 3 · Uncensored", thumb: "imgs/imgi_9_nagachichi-nagai-san-3-cv1.webp", tag: "4K HDR" },
+    { title: "Iribitari Gal ni Manko Tsukawasete Morau Hanashi", episode: "EP 4 · Hot", thumb: "imgs/imgi_22_iribitari-gal-ni-manko-tsukawasete-morau-hanashi-4-cv1.webp", tag: "Trending" },
+    { title: "Korette Naani", episode: "EP 2 · New", thumb: "imgs/imgi_23_korette-naani-2-cv1.webp", tag: "Exclusive" },
+    { title: "Imaizumin Chi wa Douyara Gal no Tamariba ni Natteru Rashii", episode: "S6 · EP 6", thumb: "imgs/imgi_24_imaizumin-chi-wa-douyara-gal-no-tamariba-ni-natteru-rashii-6-cv1.webp", tag: "1080p" },
+    { title: "Imaizumin Chi wa Douyara Gal no Tamariba ni Natteru Rashii", episode: "S5 · EP 5", thumb: "imgs/imgi_25_imaizumin-chi-wa-douyara-gal-no-tamariba-ni-natteru-rashii-5-cv1.webp", tag: "4K" }
   ];
 
   const thumbGrid = document.getElementById('thumbGrid');

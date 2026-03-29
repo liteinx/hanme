@@ -34,7 +34,7 @@
         <i class="fas fa-crown"></i> #1 Anime Hentai Streaming
       </div>
       <h1>Uncensored. Unlimited.<br>Ultimate Experience.</h1>
-      <p class="hero-desc">Stream thousands of hentai OVAs, uncensored episodes, and exclusive anime in crisp 1080p/4K. Get the official Hanime.tv Android APK and enjoy ad-free, offline mode, and early access.</p>
+      <p class="hero-desc">Stream thousands of hentai OVAs, uncensored episodes, and exclusive anime in crisp 1080p/4K. Get the official Hanime  Android APK and enjoy ad-free, offline mode, and early access.</p>
       <div class="download-group">
         <button class="btn-apk" id="heroApkBtn">
           <i class="fab fa-android"></i> Download APK Now
@@ -52,7 +52,7 @@
     <div class="hero-graphic">
       <div class="app-mock">
         <i class="fas fa-play-circle"></i>
-        <p style="font-weight:bold;">Hanime.tv<br>Official App</p>
+        <p style="font-weight:bold;">Hanime <br>Official App</p>
         <span style="font-size:0.7rem;">v4.2.1 • APK 28MB</span>
       </div>
     </div>
@@ -68,7 +68,7 @@
   <!-- APK Download Banner -->
   <div class="apk-banner">
     <div class="banner-content">
-      <h3><i class="fab fa-android"></i> Hanime.tv APK – Premium Unlocked</h3>
+      <h3><i class="fab fa-android"></i> Hanime  APK – Premium Unlocked</h3>
       <p>Download latest version (v4.2.1) • Uncensored streams • Offline mode • No region lock</p>
     </div>
     <button class="btn-banner" id="bannerApkBtn">
@@ -85,15 +85,15 @@
   </div>
 
   <footer>
-    <p>© 2025 Hanime.tv — The ultimate hentai streaming platform. All trademarks belong to their respective owners.</p>
+    <p>© 2025 Hanime  — The ultimate hentai streaming platform. All trademarks belong to their respective owners.</p>
     <p style="margin-top: 8px;"><i class="fas fa-shield-alt"></i> Safe & secure APK • No ads inside app • 18+ only</p>
   </footer>
 </div>
 
-<div id="toastMsg" class="toast-notify">⬇️ Downloading Hanime.tv APK — Get the full experience!</div>
+<div id="toastMsg" class="toast-notify">⬇️ Downloading Hanime  APK — Get the full experience!</div>
 
 <script>
-  // Thumbnail data for hentai/anime previews (Hanime.tv style)
+  // Thumbnail data for hentai/anime previews (Hanime  style)
   const videoThumbs = [
     { title: "Temptation Academy", episode: "EP 3 · Uncensored", thumb: "https://picsum.photos/id/104/400/225", tag: "4K" },
     { title: "Forbidden Ritual", episode: "OVA 2 · New", thumb: "https://picsum.photos/id/96/400/225", tag: "Hot" },
@@ -124,7 +124,7 @@
         </div>
       `;
       card.addEventListener('click', () => {
-        showToast(`🔥 "${item.title}" — only on Hanime.tv app. Download APK to watch full uncensored!`);
+        showToast(`🔥 "${item.title}" — only on Hanime  app. Download APK to watch full uncensored!`);
         simulateApkDownload();
       });
       thumbGrid.appendChild(card);
@@ -146,7 +146,7 @@
     const toast = document.getElementById('toastMsg');
     if (!toast) return;
     if (toastTimeout) clearTimeout(toastTimeout);
-    toast.textContent = message || '📱 Download Hanime.tv APK — unlimited uncensored streams!';
+    toast.textContent = message || '📱 Download Hanime  APK — unlimited uncensored streams!';
     toast.classList.add('show');
     toastTimeout = setTimeout(() => {
       toast.classList.remove('show');
@@ -156,7 +156,7 @@
   // Simulate APK download trigger (direct download)
   function simulateApkDownload() {
     // In real scenario: window.location.href = "https://hanime.tv/download/latest.apk";
-    showToast("⬇️ Download started: Hanime.tv_v4.2.1.apk — check notifications.");
+    showToast("⬇️ Download started: Hanime _v4.2.1.apk — check notifications.");
     // optional: trigger hidden link
     // for demonstration, we log & show alert-like toast
     console.log("APK download triggered (simulated direct download)");
@@ -174,7 +174,7 @@
   document.getElementById('bannerApkBtn')?.addEventListener('click', () => handleDownloadClick());
   document.getElementById('heroFeaturesBtn')?.addEventListener('click', () => {
     document.querySelector('.features-mini')?.scrollIntoView({ behavior: 'smooth' });
-    showToast("✨ Explore all Hanime.tv app features below!");
+    showToast("✨ Explore all Hanime  app features below!");
   });
 
   renderThumbnails();

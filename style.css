@@ -6,13 +6,13 @@
 
     body {
         font-family: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
-        background: #0a0a0f;
-        color: #f0f0f5;
+        background: #0a0a0a;
+        color: #f5f5f5;
         line-height: 1.5;
         overflow-x: hidden;
     }
 
-    /* Hanime.tv inspired dark gradient + vibrant pink/purple accents */
+    /* Dark gradient with white accents */
     .bg-dark {
         position: fixed;
         top: 0;
@@ -20,7 +20,7 @@
         width: 100%;
         height: 100%;
         z-index: -2;
-        background: radial-gradient(circle at 10% 20%, #12121c, #050508);
+        background: radial-gradient(circle at 10% 20%, #1a1a1a, #000000);
     }
 
     .bg-glow {
@@ -30,7 +30,7 @@
         width: 100%;
         height: 100%;
         z-index: -1;
-        background: radial-gradient(circle at 70% 40%, rgba(255, 80, 140, 0.12), transparent 60%);
+        background: radial-gradient(circle at 70% 40%, rgba(255, 255, 255, 0.03), transparent 60%);
         animation: subtlePulse 8s ease-in-out infinite alternate;
     }
 
@@ -62,7 +62,7 @@
         gap: 1.2rem;
         margin-bottom: 3rem;
         padding-bottom: 1rem;
-        border-bottom: 1px solid rgba(255, 70, 120, 0.3);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .logo {
@@ -75,7 +75,7 @@
     }
 
     .logo-img {
-        background: linear-gradient(145deg, #FF3B6F, #FF1E4A);
+        background: linear-gradient(145deg, #4a4a4a, #2a2a2a);
         width: 44px;
         height: 44px;
         border-radius: 14px;
@@ -85,11 +85,11 @@
         font-size: 1.6rem;
         font-weight: 900;
         color: white;
-        box-shadow: 0 6px 16px rgba(255, 30, 74, 0.4);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
     }
 
     .logo-text {
-        background: linear-gradient(135deg, #FFFFFF, #FF99BB, #FF4D6D);
+        background: linear-gradient(135deg, #FFFFFF, #d0d0d0, #a0a0a0);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
@@ -102,13 +102,13 @@
     }
 
     .apk-badge {
-        background: rgba(255, 50, 100, 0.2);
+        background: rgba(100, 100, 100, 0.15);
         backdrop-filter: blur(12px);
         padding: 0.6rem 1.5rem;
         border-radius: 60px;
         font-weight: 700;
         font-size: 0.9rem;
-        border: 1px solid rgba(255, 70, 120, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.2);
         display: flex;
         align-items: center;
         gap: 10px;
@@ -118,12 +118,12 @@
 
     .apk-badge i {
         font-size: 1.2rem;
-        color: #FF6B8F;
+        color: #d0d0d0;
     }
 
     .apk-badge:hover {
-        background: rgba(255, 50, 100, 0.4);
-        border-color: #FF4D6D;
+        background: rgba(150, 150, 150, 0.25);
+        border-color: rgba(255, 255, 255, 0.4);
         transform: scale(1.02);
     }
 
@@ -142,7 +142,7 @@
     }
 
     .hero-badge {
-        background: rgba(255, 45, 85, 0.2);
+        background: rgba(100, 100, 100, 0.15);
         display: inline-flex;
         align-items: center;
         gap: 8px;
@@ -150,20 +150,20 @@
         border-radius: 60px;
         font-size: 0.8rem;
         font-weight: 600;
-        border: 1px solid rgba(255, 70, 110, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.2);
         margin-bottom: 1.2rem;
         backdrop-filter: blur(4px);
     }
 
     .hero-badge i {
-        color: #FF6B8F;
+        color: #d0d0d0;
     }
 
     .hero h1 {
         font-size: 3.5rem;
         font-weight: 900;
         line-height: 1.2;
-        background: linear-gradient(to right, #FFFFFF, #FFA5C0, #FF3B6F);
+        background: linear-gradient(to right, #FFFFFF, #e0e0e0, #b0b0b0);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
@@ -172,7 +172,7 @@
 
     .hero-desc {
         font-size: 1.2rem;
-        color: #cfcfec;
+        color: #b0b0b0;
         max-width: 550px;
         margin-bottom: 2rem;
     }
@@ -185,7 +185,7 @@
     }
 
     .btn-apk {
-        background: linear-gradient(105deg, #E61E4D, #FF3366);
+        background: linear-gradient(105deg, #3a3a3a, #2a2a2a);
         border: none;
         padding: 1rem 2.2rem;
         border-radius: 50px;
@@ -196,7 +196,7 @@
         gap: 12px;
         color: white;
         transition: all 0.25s;
-        box-shadow: 0 12px 24px rgba(230, 30, 77, 0.4);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
         cursor: pointer;
     }
 
@@ -206,20 +206,20 @@
 
     .btn-apk:hover {
         transform: translateY(-3px);
-        background: linear-gradient(105deg, #FF3366, #FF4D7A);
-        box-shadow: 0 20px 30px -8px rgba(255, 51, 102, 0.6);
+        background: linear-gradient(105deg, #4a4a4a, #3a3a3a);
+        box-shadow: 0 20px 30px -8px rgba(0, 0, 0, 0.6);
     }
 
     .btn-outline-light {
         background: transparent;
-        border: 1.5px solid rgba(255, 70, 120, 0.8);
+        border: 1.5px solid rgba(255, 255, 255, 0.3);
         box-shadow: none;
         backdrop-filter: blur(8px);
     }
 
     .btn-outline-light:hover {
-        background: rgba(255, 51, 102, 0.2);
-        border-color: #FF4D6D;
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.5);
     }
 
     .stats {
@@ -233,12 +233,12 @@
         align-items: center;
         gap: 8px;
         font-size: 0.9rem;
-        color: #ffb0c3;
+        color: #c0c0c0;
     }
 
     .stat-item i {
         font-size: 1.3rem;
-        color: #FF6B8F;
+        color: #a0a0a0;
     }
 
     /* Hero Image mockup */
@@ -247,28 +247,28 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: radial-gradient(ellipse at center, rgba(255, 51, 102, 0.15), transparent 70%);
+        background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.03), transparent 70%);
         padding: 1rem;
     }
 
     .app-mock {
-        background: linear-gradient(145deg, #1e1a2a, #12101c);
+        background: linear-gradient(145deg, #1a1a1a, #0a0a0a);
         border-radius: 2rem;
         padding: 1rem;
-        box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 70, 120, 0.2);
+        box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.1);
         width: 260px;
         text-align: center;
     }
 
     .app-mock i {
         font-size: 5rem;
-        color: #FF4D6D;
+        color: #e0e0e0;
         margin: 1rem 0;
     }
 
     .app-mock p {
         font-weight: 600;
-        background: #ff3b6f20;
+        background: rgba(255, 255, 255, 0.05);
         padding: 0.5rem;
         border-radius: 60px;
     }
@@ -284,11 +284,11 @@
     }
 
     .section-title i {
-        background: rgba(255, 51, 102, 0.25);
+        background: rgba(255, 255, 255, 0.1);
         padding: 10px;
         border-radius: 50%;
         font-size: 1.3rem;
-        color: #FF6B8F;
+        color: #d0d0d0;
     }
 
     /* Thumbnails Grid - Anime/Hentai showcase */
@@ -300,26 +300,26 @@
     }
 
     .thumb-card {
-        background: rgba(18, 12, 28, 0.7);
+        background: rgba(20, 20, 20, 0.7);
         backdrop-filter: blur(10px);
         border-radius: 1.5rem;
         overflow: hidden;
         transition: all 0.3s ease;
-        border: 1px solid rgba(255, 70, 110, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0.1);
         cursor: pointer;
     }
 
     .thumb-card:hover {
         transform: translateY(-8px);
-        border-color: rgba(255, 70, 120, 0.7);
-        box-shadow: 0 20px 32px -12px rgba(255, 51, 102, 0.3);
+        border-color: rgba(255, 255, 255, 0.3);
+        box-shadow: 0 20px 32px -12px rgba(0, 0, 0, 0.5);
     }
 
     .thumb-img {
         position: relative;
         aspect-ratio: 16 / 9;
         overflow: hidden;
-        background: #110c19;
+        background: #0a0a0a;
     }
 
     .thumb-img img {
@@ -336,7 +336,7 @@
     .play-icon-overlay {
         position: absolute;
         inset: 0;
-        background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(255, 30, 70, 0.3));
+        background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.05));
         display: flex;
         align-items: center;
         justify-content: center;
@@ -353,7 +353,7 @@
         border-radius: 60px;
         padding: 12px 16px;
         font-size: 2rem;
-        color: #FF3366;
+        color: #ffffff;
         backdrop-filter: blur(4px);
     }
 
@@ -369,14 +369,14 @@
 
     .card-info p {
         font-size: 0.75rem;
-        color: #ffa7bd;
+        color: #b0b0b0;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
     .tag {
-        background: rgba(255, 51, 102, 0.25);
+        background: rgba(255, 255, 255, 0.1);
         padding: 0.2rem 0.7rem;
         border-radius: 30px;
         font-size: 0.7rem;
@@ -385,7 +385,7 @@
 
     /* APK Download Banner */
     .apk-banner {
-        background: linear-gradient(125deg, rgba(230, 30, 77, 0.25), rgba(20, 12, 32, 0.95));
+        background: linear-gradient(125deg, rgba(60, 60, 60, 0.2), rgba(10, 10, 10, 0.95));
         border-radius: 2rem;
         padding: 2rem 2rem;
         margin: 2rem 0 2rem;
@@ -394,7 +394,7 @@
         justify-content: space-between;
         align-items: center;
         gap: 1.8rem;
-        border: 1px solid rgba(255, 70, 120, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.15);
         backdrop-filter: blur(12px);
     }
 
@@ -407,16 +407,16 @@
     }
 
     .banner-content h3 i {
-        color: #FF4D6D;
+        color: #e0e0e0;
     }
 
     .banner-content p {
         margin-top: 0.5rem;
-        color: #ffc0d0;
+        color: #c0c0c0;
     }
 
     .btn-banner {
-        background: #FF2E63;
+        background: #3a3a3a;
         border: none;
         padding: 1rem 2rem;
         border-radius: 60px;
@@ -427,11 +427,11 @@
         gap: 12px;
         transition: all 0.2s;
         cursor: pointer;
-        box-shadow: 0 6px 18px rgba(255, 46, 99, 0.4);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
     }
 
     .btn-banner:hover {
-        background: #FF4D7A;
+        background: #4a4a4a;
         transform: scale(1.02);
         gap: 16px;
     }
@@ -445,18 +445,18 @@
     }
 
     .feat-card {
-        background: rgba(20, 14, 32, 0.6);
+        background: rgba(20, 20, 20, 0.6);
         backdrop-filter: blur(8px);
         border-radius: 1.5rem;
         padding: 1.2rem;
         text-align: center;
-        border: 1px solid rgba(255, 70, 110, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.1);
         transition: 0.2s;
     }
 
     .feat-card i {
         font-size: 2rem;
-        color: #FF6B8F;
+        color: #c0c0c0;
         margin-bottom: 0.6rem;
     }
 
@@ -466,15 +466,15 @@
 
     .feat-card p {
         font-size: 0.8rem;
-        color: #b9b9e6;
+        color: #a0a0a0;
     }
 
     footer {
         margin-top: 4rem;
         text-align: center;
         font-size: 0.8rem;
-        color: #a594aa;
-        border-top: 1px solid rgba(255, 70, 110, 0.2);
+        color: #808080;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
         padding-top: 2rem;
     }
 
@@ -484,14 +484,14 @@
         bottom: 28px;
         left: 50%;
         transform: translateX(-50%) scale(0.9);
-        background: #1f172f;
+        background: #1a1a1a;
         backdrop-filter: blur(20px);
         padding: 12px 28px;
         border-radius: 80px;
         font-weight: 600;
-        color: #fff0f3;
+        color: #ffffff;
         z-index: 1000;
-        border-left: 5px solid #FF3366;
+        border-left: 5px solid #808080;
         opacity: 0;
         transition: 0.2s;
         pointer-events: none;
